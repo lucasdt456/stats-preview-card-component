@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./src/output.css" rel="stylesheet">
+  <title>Frontend Mentor | Stats preview card component</title>
+</head>
+<body class="font-Inter bg-Navy-950-main-background 
+text-White-main-heading
+h-screen grid place-content-center">
+
+  <main>
+
+    <div class="bg-Blue-950-card-background
+    w-[327px]  rounded-lg overflow-hidden
+    xl:flex xl:w-[1110px] xl:flex-row-reverse">
+      <!-- section one (images) -->
+       <picture class="relative flex-shrink-0 xl:w-[540px]">
+        <source media="(max-width:1280px)" 
+        srcset="./assets/images/image-header-mobile.jpg">
+
+        <source media="(min-width:1281px)" 
+        srcset="./assets/images/image-header-desktop.jpg">
+
+        <img src="./assets/images/image-header-mobile.jpg" 
+        alt="A photo of the meeting (mobile)">
+        <div class="bg-Add-Image-Filter/65 saturate-100 w-full h-full 
+        absolute top-0"></div>
+       </picture>
+      
+      <!-- section two (content & text) -->
+      <div class="pt-10 px-8 pb-8 text-center flex-1
+      xl:p-[72px] xl:pr-[98px]">
+        <h1 class="font-bold text-[30px] leading-[1.10]
+        mb-4 xl:text-4xl xl:text-left xl:leading-11 xl:w-[400px] xl:mb-7">
+          Get <span class="text-Purple-500-accent">insights</span> that help your business grow.
+        </h1>
+        
+        <p class="text-White-main-paragraph
+        mb-10 text-[0.94em] leading-[1.65] xl:w-[375px]
+        xl:text-left xl:leading-6 xl:mb-16">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+
+        <div class="flex flex-col gap-7 xl:flex-row
+        xl:place-content-between xl:w-[375px]">
+
+          <div class="">
+            <p class="font-bold text-2xl">10k+</p>
+            <p class="text-[0.77em] tracking-wider text-White-main-paragraph font-Lexend-Deca uppercase ">companies</p>
+          </div>
+
+          <div class="">
+            <p class="font-bold text-2xl uppercase">314</p>
+            <p class="text-[0.77em] tracking-wider text-White-main-paragraph font-Lexend-Deca uppercase ">templates</p>
+          </div>
+
+          <div class="">
+            <p class="font-bold text-2xl uppercase">12m+</p>
+            <p class="text-[0.77em] tracking-wider text-White-main-paragraph font-Lexend-Deca uppercase ">queries</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

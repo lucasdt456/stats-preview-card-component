@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-Navy-950-main-background: hsl(233, 47%, 7%);
+  --color-Blue-950-card-background: hsl(244, 37%, 16%);
+  --color-Purple-500-accent: hsl(277, 64%, 61%);
+  --color-White-main-heading: hsl(0, 0%, 100%);
+  --color-White-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --color-White-stat-headings: hsla(0, 0%, 100%, 0.6);
+  --color-Add-Image-Filter: hsla(277, 90%, 23%);
+
+
+  --font-Inter: "Inter";
+  --font-Lexend-Deca: "Lexend Deca";
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/Lexend_Deca/LexendDeca-VariableFont_wght.woff2") format("woff2");
+}
