@@ -188,6 +188,9 @@
   .top-0 {
     top: 0;
   }
+  .left-0 {
+    left: 0;
+  }
   .mt-1 {
     margin-top: var(--spacing);
   }
@@ -335,6 +338,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-Purple-500-accent) 45%, transparent);
     }
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);

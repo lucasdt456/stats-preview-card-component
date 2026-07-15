@@ -18,18 +18,23 @@ h-screen grid place-content-center">
     w-[327px]  rounded-lg overflow-hidden
     xl:flex xl:w-[1110px] xl:flex-row-reverse">
       <!-- section one (images) -->
-       <picture class="relative flex-shrink-0 xl:w-[540px]">
-        <source media="(max-width:1280px)" 
-        srcset="./assets/images/image-header-mobile.jpg">
+      <div class="relative flex-shrink-0 xl:w-[540px] h-full">
+        
+        <picture>
+          <source media="(max-width:1280px)" 
+          srcset="./assets/images/image-header-mobile.jpg">
 
-        <source media="(min-width:1281px)" 
-        srcset="./assets/images/image-header-desktop.jpg">
+          <source media="(min-width:1281px)" 
+          srcset="./assets/images/image-header-desktop.jpg">
 
-        <img src="./assets/images/image-header-mobile.jpg" 
-        alt="A photo of the meeting (mobile)">
-        <div class="bg-Add-Image-Filter/65 saturate-100 w-full h-full 
-        absolute top-0"></div>
-       </picture>
+          <img src="./assets/images/image-header-mobile.jpg" 
+          alt="A photo of the meeting" 
+          class="w-full h-full object-cover">
+        </picture>
+        
+        <div class="bg-Add-Image-Filter/65 saturate-100 w-full h-full absolute top-0 left-0"></div>
+        
+      </div>
       
       <!-- section two (content & text) -->
       <div class="pt-10 px-8 pb-8 text-center flex-1
